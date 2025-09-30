@@ -62,6 +62,9 @@ for i in range(1, m + 1):
 
 #boletin 5, 7
 
+for i in range(7):
+    for j in range(i, 7):
+        print(i, "-", j)
 
 
 
