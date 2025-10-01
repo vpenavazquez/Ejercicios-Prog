@@ -99,6 +99,17 @@ area = n * m
 
 print("el area del rectangulo es:", area)
 
+#boletin 5, 11
+
+while True:
+    numero = int(input("Introduce un número (0 para saír): "))
+    if numero == 0:
+        break
+    print(f"Táboa de multiplicar do {numero}:")
+    for i in range(1, 11):
+        print(f"{numero} x {i} = {numero * i}")
+
+
 
 
 
