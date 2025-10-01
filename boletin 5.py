@@ -61,10 +61,38 @@ for i in range(1, m + 1):
     print(f"{i} - {num}! = {factorial}")
 
 #boletin 5, 7
+input("Fichas de dominó")
+for a in range(7):
+    for b in range(a, 7):
+        print(a, "-", b)
 
-for i in range(7):
-    for j in range(i, 7):
-        print(i, "-", j)
+#boletin 5, 8
+n = int(input("di un numero para generar fichas"))
+for a in range(n):
+    for b in range(0 , n):
+        print(a, "-", b)
+
+#boletin 5, 9
+
+positivos = 0
+negativos = 0
+ceros = 0
+
+for i in range(10):
+    n = int(input("Introduce un número entero: "))
+    if n > 0:
+        positivos += 1
+    elif n < 0:
+        negativos += 1
+    else:
+        ceros += 1
+
+print("Positivos:", positivos)
+print("Negativos:", negativos)
+print("Ceros:", ceros)
+
+
+
 
 
 
