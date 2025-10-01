@@ -91,7 +91,13 @@ print("Positivos:", positivos)
 print("Negativos:", negativos)
 print("Ceros:", ceros)
 
+#boletin 5, 10
+n = int(input("Introduce la base del rectangulo: "))
+m = int(input("Introduce la altura del rectangulo: "))
 
+area = n * m
+
+print("el area del rectangulo es:", area)
 
 
 
