@@ -1,3 +1,15 @@
+#boletin 6, 1
+asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lingua"]
+
+notas = {}
+
+for asignatura in asignaturas:
+    nota = input(f"Que nota sacaches en {asignatura}? ")
+    notas[asignatura] = nota
+
+for asignatura in asignaturas:
+    print(f"En {asignatura} sacaches {notas[asignatura]}")
+
 #boletin 6, 5
 
 abecedario = list("abcdefghijklmnopqrstuvwxyz")
