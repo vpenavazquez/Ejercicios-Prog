@@ -10,6 +10,12 @@ for asignatura in asignaturas:
 for asignatura in asignaturas:
     print(f"En {asignatura} sacaches {notas[asignatura]}")
 
+#boletin 6, 3
+
+numeros = list(range(1, 11))
+
+print(numeros[::-1])
+
 #boletin 6, 5
 
 abecedario = list("abcdefghijklmnopqrstuvwxyz")
@@ -34,6 +40,8 @@ else:
 prezos = [50, 75, 46, 22, 80, 65, 8]
 print("O menor prezo é:", min(prezos))
 print("O maior prezo é:", max(prezos))
+
+
 
 
 
