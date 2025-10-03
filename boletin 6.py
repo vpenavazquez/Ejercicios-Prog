@@ -18,20 +18,14 @@ print(numeros[::-1])
 
 #BOLETIN 6, 4
 
-asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lingua"]
+numero = int(input("cuantos valores quieres ingresar: "))
 
-suspensas = []
-
-for asignatura in asignaturas:
-    nota = float(input(f"Que nota sacaches en {asignatura}? "))
-    if nota < 5:
-        suspensas.append(asignatura)
-if suspensas:
-    print("Tes que repetir as seguintes asignaturas:")
-    for asignatura in suspensas:
-        print(f"- {asignatura}")
-else:
-    print("Parabéns! Aprobaches todas as asignaturas.")
+for i in range(numero):
+    n = int(input("dime el numero: "))
+    factorial = 1
+    for a in range(1, n + 1):
+        factorial *= a
+        print("valor",n, "factorial:",factorial)
 
 
 #boletin 6, 5
@@ -68,6 +62,19 @@ for vogal in vogais:
 prezos = [50, 75, 46, 22, 80, 65, 8]
 print("O menor prezo é:", min(prezos))
 print("O maior prezo é:", max(prezos))
+
+#boletin 6, 9
+
+a = [1, 2, 3]
+b = [-1, 0, 2]
+
+resultado = []
+for i in range(len(a)):
+    resultado.append(a[i] * b[i])
+
+print(resultado)
+
+#boletin 6, 10
 
 
 
