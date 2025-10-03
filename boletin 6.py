@@ -53,6 +53,16 @@ if palabra == palabra[::-1]:
 else:
     print("Non é un palíndromo.")
 
+#boletin 6, 7
+
+palabra = input("Escribe unha palabra para contar as vogais")
+
+vogais = ['a', 'e', 'i', 'o', 'u']
+
+for vogal in vogais:
+    contador = palabra.count(vogal)
+    print(f"A vogal '{vogal}' aparece {contador} veces.")
+
 #boletin 6, 8
 
 prezos = [50, 75, 46, 22, 80, 65, 8]
