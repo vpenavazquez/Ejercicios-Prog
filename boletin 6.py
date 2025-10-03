@@ -16,6 +16,24 @@ numeros = list(range(1, 11))
 
 print(numeros[::-1])
 
+#BOLETIN 6, 4
+
+asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lingua"]
+
+suspensas = []
+
+for asignatura in asignaturas:
+    nota = float(input(f"Que nota sacaches en {asignatura}? "))
+    if nota < 5:
+        suspensas.append(asignatura)
+if suspensas:
+    print("Tes que repetir as seguintes asignaturas:")
+    for asignatura in suspensas:
+        print(f"- {asignatura}")
+else:
+    print("Parabéns! Aprobaches todas as asignaturas.")
+
+
 #boletin 6, 5
 
 abecedario = list("abcdefghijklmnopqrstuvwxyz")
