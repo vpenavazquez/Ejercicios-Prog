@@ -23,3 +23,5 @@ prezos = [50, 75, 46, 22, 80, 65, 8]
 print("O menor prezo é:", min(prezos))
 print("O maior prezo é:", max(prezos))
 
+
+
