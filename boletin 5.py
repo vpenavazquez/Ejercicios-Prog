@@ -110,6 +110,24 @@ while True:
         print(f"{numero} x {i} = {numero * i}")
 
 
+#boletin 5, 13
+
+while True:
+   entrada = input("Introduce 10 números separados por espacios: ").split()
+   if len(entrada) == 10:
+       try:
+           numeros = list(map(int, entrada))
+           if 999 in numeros:
+               print("No puedes añadir el número 999. Intenta de nuevo.")
+               continue
+           total = sum(numeros)
+           print(f"El valor total es: {total}")
+           break
+       except ValueError:
+           print("Todos los valores deben ser números.")
+   else:
+       print("Introduce exactamente 10 números.")
+
 
 
 
