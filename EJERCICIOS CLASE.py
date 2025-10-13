@@ -30,7 +30,6 @@ formato_valido = ( len(fecha) == 10 and
                    fecha[5] == "/" and " " not in fecha and
                    fecha.replace("/", "").isdigit() )
 
-
 if formato_valido:
     print("Formato correcto")
 else:
