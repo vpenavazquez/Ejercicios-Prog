@@ -46,5 +46,9 @@ elif opcion == "3":
 
 #boletin 4, 3
 
+numero = float(input("Introduce un número: "))
 
+absoluto = numero if numero >= 0 else -numero
+
+print("O valor absoluto é:", absoluto)
 
