@@ -52,3 +52,45 @@ absoluto = numero if numero >= 0 else -numero
 
 print("O valor absoluto é:", absoluto)
 
+#boletin 4, 4
+
+numero = int(input("pon un numero entre el 0 y el 99"))
+
+if numero >=100:
+    print("opcion incorrecta")
+
+else:
+    unidades = ["", "un", "dous", "tres", "catro", "cinco", "seis", "sete", "oito", "nove"]
+    especiais = ["dez", "once", "doce", "trece", "catorce", "quince", "dezaseis", "dezasete", "dezaoito", "dezanove"]
+    decenas = ["", "dez", "vinte", "trinta", "corenta", "cincuenta", "sesenta", "setenta", "oitenta", "noventa"]
+
+if numero < 10:
+        texto = unidades[numero]
+
+elif numero < 20:
+        texto = especiais[numero - 10]
+
+elif numero % 10 == 0:
+        texto = decenas[numero // 10]
+
+else:
+        texto = decenas[numero // 10] + " e " + unidades[numero % 10]
+
+
+print("O número", numero, "é:", texto.capitalize())
+
+#boletin 4, 5
+
+numero = input("Dime os 8 díxitos do teu número de DNI: ")
+
+if len(numero) == 8 and numero.isdigit():
+
+    letras_dni = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B',
+                  'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E']
+
+    indice = int(numero) % 23
+    letra = letras_dni[indice]
+
+    print("Número válido:", numero + letra)
+else:
+    print("Número inválido. Debe ter 8 díxitos numéricos.")
