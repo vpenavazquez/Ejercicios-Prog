@@ -64,3 +64,23 @@ print(maiusculas)
 minusculas = maiusculas.lower()
 print(minusculas)
 
+#boletin7, 8
+
+texto1 = "Python"
+texto2 = "JavaScript"
+
+if texto1.lower() == texto2.lower():
+    print("Son iguais")
+else:
+    print("Son diferentes")
+
+#boletin7, 9
+
+texto = " Jeve jeve jeve"
+
+
+texto_cambiado = texto.replace("e", "a")
+
+
+print(texto_cambiado)
+
