@@ -84,3 +84,29 @@ texto_cambiado = texto.replace("e", "a")
 
 print(texto_cambiado)
 
+
+#boletin7, 10
+
+def contar_caracteres(cadea):
+    letras = 0
+    díxitos = 0
+    espazos = 0
+
+    for caracter in cadea:
+        if caracter.isalpha():
+            letras += 1
+        elif caracter.isdigit():
+            díxitos += 1
+        elif caracter.isspace():
+            espazos += 1
+
+    print("Número de letras:", letras)
+    print("Número de díxitos:", díxitos)
+    print("Número de espazos en branco:", espazos)
+
+
+texto = "Ola, son alumno de DAM1, e son programador desde o 2025"
+
+
+contar_caracteres(texto)
+
